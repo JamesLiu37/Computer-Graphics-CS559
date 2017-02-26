@@ -1,0 +1,3623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>twgl/textures - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-twgl.html">twgl</a><ul class='methods'><li data-type='method'><a href="module-twgl.html#.bindFramebufferInfo">bindFramebufferInfo</a></li><li data-type='method'><a href="module-twgl.html#.bindUniformBlock">bindUniformBlock</a></li><li data-type='method'><a href="module-twgl.html#.createBufferInfoFromArrays">createBufferInfoFromArrays</a></li><li data-type='method'><a href="module-twgl.html#.createFramebufferInfo">createFramebufferInfo</a></li><li data-type='method'><a href="module-twgl.html#.createProgramInfo">createProgramInfo</a></li><li data-type='method'><a href="module-twgl.html#.createTexture">createTexture</a></li><li data-type='method'><a href="module-twgl.html#.createTextures">createTextures</a></li><li data-type='method'><a href="module-twgl.html#.createUniformBlockInfo">createUniformBlockInfo</a></li><li data-type='method'><a href="module-twgl.html#.drawBufferInfo">drawBufferInfo</a></li><li data-type='method'><a href="module-twgl.html#.drawObjectList">drawObjectList</a></li><li data-type='method'><a href="module-twgl.html#.getContext">getContext</a></li><li data-type='method'><a href="module-twgl.html#.getWebGLContext">getWebGLContext</a></li><li data-type='method'><a href="module-twgl.html#.resizeCanvasToDisplaySize">resizeCanvasToDisplaySize</a></li><li data-type='method'><a href="module-twgl.html#.resizeFramebufferInfo">resizeFramebufferInfo</a></li><li data-type='method'><a href="module-twgl.html#.resizeTexture">resizeTexture</a></li><li data-type='method'><a href="module-twgl.html#.setAttribInfoBufferFromArray">setAttribInfoBufferFromArray</a></li><li data-type='method'><a href="module-twgl.html#.setBlockUniforms">setBlockUniforms</a></li><li data-type='method'><a href="module-twgl.html#.setBuffersAndAttributes">setBuffersAndAttributes</a></li><li data-type='method'><a href="module-twgl.html#.setDefaults">setDefaults</a></li><li data-type='method'><a href="module-twgl.html#.setTextureFromArray">setTextureFromArray</a></li><li data-type='method'><a href="module-twgl.html#.setUniformBlock">setUniformBlock</a></li><li data-type='method'><a href="module-twgl.html#.setUniforms">setUniforms</a></li></ul></li><li><a href="module-twgl_attributes.html">twgl/attributes</a><ul class='methods'><li data-type='method'><a href="module-twgl_attributes.html#.createAttribsFromArrays">createAttribsFromArrays</a></li><li data-type='method'><a href="module-twgl_attributes.html#.createBufferFromArray">createBufferFromArray</a></li><li data-type='method'><a href="module-twgl_attributes.html#.createBufferFromTypedArray">createBufferFromTypedArray</a></li><li data-type='method'><a href="module-twgl_attributes.html#.createBufferInfoFromArrays">createBufferInfoFromArrays</a></li><li data-type='method'><a href="module-twgl_attributes.html#.createBuffersFromArrays">createBuffersFromArrays</a></li><li data-type='method'><a href="module-twgl_attributes.html#.setAttribInfoBufferFromArray">setAttribInfoBufferFromArray</a></li><li data-type='method'><a href="module-twgl_attributes.html#.setAttributePrefix">setAttributePrefix</a></li></ul></li><li><a href="module-twgl_draw.html">twgl/draw</a><ul class='methods'><li data-type='method'><a href="module-twgl_draw.html#.drawBufferInfo">drawBufferInfo</a></li><li data-type='method'><a href="module-twgl_draw.html#.drawObjectList">drawObjectList</a></li></ul></li><li><a href="module-twgl_framebuffers.html">twgl/framebuffers</a><ul class='methods'><li data-type='method'><a href="module-twgl_framebuffers.html#.bindFramebufferInfo">bindFramebufferInfo</a></li><li data-type='method'><a href="module-twgl_framebuffers.html#.createFramebufferInfo">createFramebufferInfo</a></li><li data-type='method'><a href="module-twgl_framebuffers.html#.resizeFramebufferInfo">resizeFramebufferInfo</a></li></ul></li><li><a href="module-twgl_m4.html">twgl/m4</a><ul class='methods'><li data-type='method'><a href="module-twgl_m4.html#.axisRotate">axisRotate</a></li><li data-type='method'><a href="module-twgl_m4.html#.axisRotation">axisRotation</a></li><li data-type='method'><a href="module-twgl_m4.html#.copy">copy</a></li><li data-type='method'><a href="module-twgl_m4.html#.frustum">frustum</a></li><li data-type='method'><a href="module-twgl_m4.html#.getAxis">getAxis</a></li><li data-type='method'><a href="module-twgl_m4.html#.getTranslation">getTranslation</a></li><li data-type='method'><a href="module-twgl_m4.html#.identity">identity</a></li><li data-type='method'><a href="module-twgl_m4.html#.inverse">inverse</a></li><li data-type='method'><a href="module-twgl_m4.html#.lookAt">lookAt</a></li><li data-type='method'><a href="module-twgl_m4.html#.multiply">multiply</a></li><li data-type='method'><a href="module-twgl_m4.html#.negate">negate</a></li><li data-type='method'><a href="module-twgl_m4.html#.ortho">ortho</a></li><li data-type='method'><a href="module-twgl_m4.html#.perspective">perspective</a></li><li data-type='method'><a href="module-twgl_m4.html#.rotateX">rotateX</a></li><li data-type='method'><a href="module-twgl_m4.html#.rotateY">rotateY</a></li><li data-type='method'><a href="module-twgl_m4.html#.rotateZ">rotateZ</a></li><li data-type='method'><a href="module-twgl_m4.html#.rotationX">rotationX</a></li><li data-type='method'><a href="module-twgl_m4.html#.rotationY">rotationY</a></li><li data-type='method'><a href="module-twgl_m4.html#.rotationZ">rotationZ</a></li><li data-type='method'><a href="module-twgl_m4.html#.scale">scale</a></li><li data-type='method'><a href="module-twgl_m4.html#.scaling">scaling</a></li><li data-type='method'><a href="module-twgl_m4.html#.setAxis">setAxis</a></li><li data-type='method'><a href="module-twgl_m4.html#.setTranslation">setTranslation</a></li><li data-type='method'><a href="module-twgl_m4.html#.transformDirection">transformDirection</a></li><li data-type='method'><a href="module-twgl_m4.html#.transformNormal">transformNormal</a></li><li data-type='method'><a href="module-twgl_m4.html#.transformPoint">transformPoint</a></li><li data-type='method'><a href="module-twgl_m4.html#.translate">translate</a></li><li data-type='method'><a href="module-twgl_m4.html#.translation">translation</a></li><li data-type='method'><a href="module-twgl_m4.html#.transpose">transpose</a></li></ul></li><li><a href="module-twgl_primitives.html">twgl/primitives</a><ul class='methods'><li data-type='method'><a href="module-twgl_primitives.html#.concatVertices">concatVertices</a></li><li data-type='method'><a href="module-twgl_primitives.html#.create3DFBufferInfo">create3DFBufferInfo</a></li><li data-type='method'><a href="module-twgl_primitives.html#.create3DFBuffers">create3DFBuffers</a></li><li data-type='method'><a href="module-twgl_primitives.html#.create3DFVertices">create3DFVertices</a></li><li data-type='method'><a href="module-twgl_primitives.html#.createAugmentedTypedArray">createAugmentedTypedArray</a></li><li data-type='method'><a href="module-twgl_primitives.html#.createCresentBufferInfo">createCresentBufferInfo</a></li><li data-type='method'><a href="module-twgl_primitives.html#.createCresentBuffers">createCresentBuffers</a></li><li data-type='method'><a href="module-twgl_primitives.html#.createCresentVertices">createCresentVertices</a></li><li data-type='method'><a href="module-twgl_primitives.html#.createCubeBufferInfo">createCubeBufferInfo</a></li><li data-type='method'><a href="module-twgl_primitives.html#.createCubeBuffers">createCubeBuffers</a></li><li data-type='method'><a href="module-twgl_primitives.html#.createCubeVertices">createCubeVertices</a></li><li data-type='method'><a href="module-twgl_primitives.html#.createCylinderBufferInfo">createCylinderBufferInfo</a></li><li data-type='method'><a href="module-twgl_primitives.html#.createCylinderBuffers">createCylinderBuffers</a></li><li data-type='method'><a href="module-twgl_primitives.html#.createCylinderVertices">createCylinderVertices</a></li><li data-type='method'><a href="module-twgl_primitives.html#.createDiscBufferInfo">createDiscBufferInfo</a></li><li data-type='method'><a href="module-twgl_primitives.html#.createDiscBuffers">createDiscBuffers</a></li><li data-type='method'><a href="module-twgl_primitives.html#.createDiscVertices">createDiscVertices</a></li><li data-type='method'><a href="module-twgl_primitives.html#.createPlaneBufferInfo">createPlaneBufferInfo</a></li><li data-type='method'><a href="module-twgl_primitives.html#.createPlaneBuffers">createPlaneBuffers</a></li><li data-type='method'><a href="module-twgl_primitives.html#.createPlaneVertices">createPlaneVertices</a></li><li data-type='method'><a href="module-twgl_primitives.html#.createSphereBufferInfo">createSphereBufferInfo</a></li><li data-type='method'><a href="module-twgl_primitives.html#.createSphereBuffers">createSphereBuffers</a></li><li data-type='method'><a href="module-twgl_primitives.html#.createSphereVertices">createSphereVertices</a></li><li data-type='method'><a href="module-twgl_primitives.html#.createTorusBufferInfo">createTorusBufferInfo</a></li><li data-type='method'><a href="module-twgl_primitives.html#.createTorusBuffers">createTorusBuffers</a></li><li data-type='method'><a href="module-twgl_primitives.html#.createTorusVertices">createTorusVertices</a></li><li data-type='method'><a href="module-twgl_primitives.html#.createTruncatedConeBufferInfo">createTruncatedConeBufferInfo</a></li><li data-type='method'><a href="module-twgl_primitives.html#.createTruncatedConeBuffers">createTruncatedConeBuffers</a></li><li data-type='method'><a href="module-twgl_primitives.html#.createTruncatedConeVertices">createTruncatedConeVertices</a></li><li data-type='method'><a href="module-twgl_primitives.html#.createXYQuadBufferInfo">createXYQuadBufferInfo</a></li><li data-type='method'><a href="module-twgl_primitives.html#.createXYQuadBuffers">createXYQuadBuffers</a></li><li data-type='method'><a href="module-twgl_primitives.html#.createXYQuadVertices">createXYQuadVertices</a></li><li data-type='method'><a href="module-twgl_primitives.html#.deindexVertices">deindexVertices</a></li><li data-type='method'><a href="module-twgl_primitives.html#.duplicateVertices">duplicateVertices</a></li><li data-type='method'><a href="module-twgl_primitives.html#.flattenNormals">flattenNormals</a></li><li data-type='method'><a href="module-twgl_primitives.html#.makeRandomVertexColors">makeRandomVertexColors</a></li><li data-type='method'><a href="module-twgl_primitives.html#.reorientDirections">reorientDirections</a></li><li data-type='method'><a href="module-twgl_primitives.html#.reorientNormals">reorientNormals</a></li><li data-type='method'><a href="module-twgl_primitives.html#.reorientPositions">reorientPositions</a></li><li data-type='method'><a href="module-twgl_primitives.html#.reorientVertices">reorientVertices</a></li></ul></li><li><a href="module-twgl_programs.html">twgl/programs</a><ul class='methods'><li data-type='method'><a href="module-twgl_programs.html#.bindUniformBlock">bindUniformBlock</a></li><li data-type='method'><a href="module-twgl_programs.html#.createAttributeSetters">createAttributeSetters</a></li><li data-type='method'><a href="module-twgl_programs.html#.createProgram">createProgram</a></li><li data-type='method'><a href="module-twgl_programs.html#.createProgramFromScripts">createProgramFromScripts</a></li><li data-type='method'><a href="module-twgl_programs.html#.createProgramFromSources">createProgramFromSources</a></li><li data-type='method'><a href="module-twgl_programs.html#.createProgramInfo">createProgramInfo</a></li><li data-type='method'><a href="module-twgl_programs.html#.createProgramInfoFromProgram">createProgramInfoFromProgram</a></li><li data-type='method'><a href="module-twgl_programs.html#.createUniformBlockInfo">createUniformBlockInfo</a></li><li data-type='method'><a href="module-twgl_programs.html#.createUniformBlockInfoFromProgram">createUniformBlockInfoFromProgram</a></li><li data-type='method'><a href="module-twgl_programs.html#.createUniformBlockSpecFromProgram">createUniformBlockSpecFromProgram</a></li><li data-type='method'><a href="module-twgl_programs.html#.createUniformSetters">createUniformSetters</a></li><li data-type='method'><a href="module-twgl_programs.html#.setAttributes">setAttributes</a></li><li data-type='method'><a href="module-twgl_programs.html#.setBlockUniforms">setBlockUniforms</a></li><li data-type='method'><a href="module-twgl_programs.html#.setBuffersAndAttributes">setBuffersAndAttributes</a></li><li data-type='method'><a href="module-twgl_programs.html#.setUniformBlock">setUniformBlock</a></li><li data-type='method'><a href="module-twgl_programs.html#.setUniforms">setUniforms</a></li></ul></li><li><a href="module-twgl_textures.html">twgl/textures</a><ul class='methods'><li data-type='method'><a href="module-twgl_textures.html#.createTexture">createTexture</a></li><li data-type='method'><a href="module-twgl_textures.html#.createTextures">createTextures</a></li><li data-type='method'><a href="module-twgl_textures.html#.getBytesPerElementForInternalFormat">getBytesPerElementForInternalFormat</a></li><li data-type='method'><a href="module-twgl_textures.html#.getNumComponentsForFormat">getNumComponentsForFormat</a></li><li data-type='method'><a href="module-twgl_textures.html#.loadCubemapFromUrls">loadCubemapFromUrls</a></li><li data-type='method'><a href="module-twgl_textures.html#.loadSlicesFromUrls">loadSlicesFromUrls</a></li><li data-type='method'><a href="module-twgl_textures.html#.loadTextureFromUrl">loadTextureFromUrl</a></li><li data-type='method'><a href="module-twgl_textures.html#.resizeTexture">resizeTexture</a></li><li data-type='method'><a href="module-twgl_textures.html#.setDefaultTextureColor">setDefaultTextureColor</a></li><li data-type='method'><a href="module-twgl_textures.html#.setEmptyTexture">setEmptyTexture</a></li><li data-type='method'><a href="module-twgl_textures.html#.setSamplerParameters">setSamplerParameters</a></li><li data-type='method'><a href="module-twgl_textures.html#.setTextureFilteringForSize">setTextureFilteringForSize</a></li><li data-type='method'><a href="module-twgl_textures.html#.setTextureFromArray">setTextureFromArray</a></li><li data-type='method'><a href="module-twgl_textures.html#.setTextureFromElement">setTextureFromElement</a></li><li data-type='method'><a href="module-twgl_textures.html#.setTextureParameters">setTextureParameters</a></li><li data-type='method'><a href="module-twgl_textures.html#.setTextureTo1PixelColor">setTextureTo1PixelColor</a></li></ul></li><li><a href="module-twgl_typedArray.html">twgl/typedArray</a><ul class='methods'><li data-type='method'><a href="module-twgl_typedArray.html#.getGLTypeForTypedArray">getGLTypeForTypedArray</a></li><li data-type='method'><a href="module-twgl_typedArray.html#.getTypedArrayTypeForGLType">getTypedArrayTypeForGLType</a></li></ul></li><li><a href="module-twgl_v3.html">twgl/v3</a><ul class='methods'><li data-type='method'><a href="module-twgl_v3.html#.add">add</a></li><li data-type='method'><a href="module-twgl_v3.html#.copy">copy</a></li><li data-type='method'><a href="module-twgl_v3.html#.create">create</a></li><li data-type='method'><a href="module-twgl_v3.html#.cross">cross</a></li><li data-type='method'><a href="module-twgl_v3.html#.divide">divide</a></li><li data-type='method'><a href="module-twgl_v3.html#.divScalar">divScalar</a></li><li data-type='method'><a href="module-twgl_v3.html#.dot">dot</a></li><li data-type='method'><a href="module-twgl_v3.html#.length">length</a></li><li data-type='method'><a href="module-twgl_v3.html#.lengthSq">lengthSq</a></li><li data-type='method'><a href="module-twgl_v3.html#.lerp">lerp</a></li><li data-type='method'><a href="module-twgl_v3.html#.mulScalar">mulScalar</a></li><li data-type='method'><a href="module-twgl_v3.html#.multiply">multiply</a></li><li data-type='method'><a href="module-twgl_v3.html#.negate">negate</a></li><li data-type='method'><a href="module-twgl_v3.html#.normalize">normalize</a></li><li data-type='method'><a href="module-twgl_v3.html#.subtract">subtract</a></li></ul></li><li><a href="module-twgl_vertexArrays.html">twgl/vertexArrays</a><ul class='methods'><li data-type='method'><a href="module-twgl_vertexArrays.html#.createVAOAndSetAttributes">createVAOAndSetAttributes</a></li><li data-type='method'><a href="module-twgl_vertexArrays.html#.createVAOFromBufferInfo">createVAOFromBufferInfo</a></li><li data-type='method'><a href="module-twgl_vertexArrays.html#.createVertexArrayInfo">createVertexArrayInfo</a></li></ul></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">twgl/textures</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        
+            
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+            <div class="description"><p>Low level texture related functions</p>
+<p>You should generally not need to use these functions. They are provided<br>for those cases where you're doing something out of the ordinary<br>and you need lower level access.</p>
+<p>For backward compatibily they are available at both <code>twgl.textures</code> and <code>twgl</code><br>itself</p>
+<p>See <a href="module-twgl.html"><code>module:twgl</code></a> for core functions</p></div>
+        
+
+        
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id=".createTexture"><span class="type-signature">(static) </span>createTexture<span class="signature">(gl, options<span class="signature-attributes">opt</span>, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {WebGLTexture}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Creates a texture based on the options passed in.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>gl</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">WebGLRenderingContext</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>the WebGLRenderingContext</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-twgl.html#.TextureOptions">module:twgl.TextureOptions</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>A TextureOptions object with whatever parameters you want set.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-twgl.html#.TextureReadyCallback">module:twgl.TextureReadyCallback</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>A callback called when an image has been downloaded and uploaded to the texture.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>the created texture.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">WebGLTexture</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".createTextures"><span class="type-signature">(static) </span>createTextures<span class="signature">(gl, options, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {Object.&lt;string, WebGLTexture>}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Creates a bunch of textures based on the passed in options.</p>
+<p>Example:</p>
+<pre class="prettyprint source"><code>var textures = twgl.createTextures(gl, {
+  // a power of 2 image
+  hftIcon: { src: &quot;images/hft-icon-16.png&quot;, mag: gl.NEAREST },
+  // a non-power of 2 image
+  clover: { src: &quot;images/clover.jpg&quot; },
+  // From a canvas
+  fromCanvas: { src: ctx.canvas },
+  // A cubemap from 6 images
+  yokohama: {
+    target: gl.TEXTURE_CUBE_MAP,
+    src: [
+      'images/yokohama/posx.jpg',
+      'images/yokohama/negx.jpg',
+      'images/yokohama/posy.jpg',
+      'images/yokohama/negy.jpg',
+      'images/yokohama/posz.jpg',
+      'images/yokohama/negz.jpg',
+    ],
+  },
+  // A cubemap from 1 image (can be 1x6, 2x3, 3x2, 6x1)
+  goldengate: {
+    target: gl.TEXTURE_CUBE_MAP,
+    src: 'images/goldengate.jpg',
+  },
+  // A 2x2 pixel texture from a JavaScript array
+  checker: {
+    mag: gl.NEAREST,
+    min: gl.LINEAR,
+    src: [
+      255,255,255,255,
+      192,192,192,255,
+      192,192,192,255,
+      255,255,255,255,
+    ],
+  },
+  // a 1x2 pixel texture from a typed array.
+  stripe: {
+    mag: gl.NEAREST,
+    min: gl.LINEAR,
+    format: gl.LUMINANCE,
+    src: new Uint8Array([
+      255,
+      128,
+      255,
+      128,
+      255,
+      128,
+      255,
+      128,
+    ]),
+    width: 1,
+  },
+});</code></pre><p>Now</p>
+<ul>
+<li><code>textures.hftIcon</code> will be a 2d texture</li>
+<li><code>textures.clover</code> will be a 2d texture</li>
+<li><code>textures.fromCanvas</code> will be a 2d texture</li>
+<li><code>textures.yohohama</code> will be a cubemap texture</li>
+<li><code>textures.goldengate</code> will be a cubemap texture</li>
+<li><code>textures.checker</code> will be a 2d texture</li>
+<li><code>textures.stripe</code> will be a 2d texture</li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>gl</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">WebGLRenderingContext</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>the WebGLRenderingContext</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object.&lt;string, <a href="module-twgl.html#.TextureOptions">module:twgl.TextureOptions</a>></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>A object of TextureOptions one per texture.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-twgl.html#.TexturesReadyCallback">module:twgl.TexturesReadyCallback</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>A callback called when all textures have been downloaded.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>the created textures by name</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object.&lt;string, WebGLTexture></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".getBytesPerElementForInternalFormat"><span class="type-signature">(static) </span>getBytesPerElementForInternalFormat<span class="signature">(internalFormat, type)</span><span class="type-signature"> &rarr; {number}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Gets the number of bytes per element for a given internalFormat / type</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>internalFormat</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The internalFormat parameter from texImage2D etc..</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The type parameter for texImage2D etc..</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>the number of bytes per element for the given internalFormat, type combo</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".getNumComponentsForFormat"><span class="type-signature">(static) </span>getNumComponentsForFormat<span class="signature">(format)</span><span class="type-signature"> &rarr; {number}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Gets the number of compontents for a given image format.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>format</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the format.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>the number of components for the format.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".loadCubemapFromUrls"><span class="type-signature">(static) </span>loadCubemapFromUrls<span class="signature">(gl, tex, options, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Loads a cubemap from 6 urls as specified in <code>options.src</code>. Will set the cubemap to a 1x1 pixel color<br>so that it is usable immediately unless <code>option.color === false</code>.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>gl</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">WebGLRenderingContext</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>the WebGLRenderingContext</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>tex</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">WebGLTexture</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>the WebGLTexture to set parameters for</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-twgl.html#.TextureOptions">module:twgl.TextureOptions</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>A TextureOptions object with whatever parameters you want set.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-twgl.html#.CubemapReadyCallback">module:twgl.CubemapReadyCallback</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>A function to be called when all the images have finished loading. err will<br>   be non null if there was an error.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".loadSlicesFromUrls"><span class="type-signature">(static) </span>loadSlicesFromUrls<span class="signature">(gl, tex, options, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Loads a 2d array or 3d texture from urls as specified in <code>options.src</code>.<br>Will set the texture to a 1x1 pixel color<br>so that it is usable immediately unless <code>option.color === false</code>.</p>
+<p>If the width and height is not specified the width and height of the first<br>image loaded will be used. Note that since images are loaded async<br>which image downloads first is unknown.</p>
+<p>If an image is not the same size as the width and height it will be scaled<br>to that width and height.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>gl</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">WebGLRenderingContext</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>the WebGLRenderingContext</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>tex</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">WebGLTexture</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>the WebGLTexture to set parameters for</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-twgl.html#.TextureOptions">module:twgl.TextureOptions</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>A TextureOptions object with whatever parameters you want set.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-twgl.html#.ThreeDReadyCallback">module:twgl.ThreeDReadyCallback</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>A function to be called when all the images have finished loading. err will<br>   be non null if there was an error.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".loadTextureFromUrl"><span class="type-signature">(static) </span>loadTextureFromUrl<span class="signature">(gl, tex, options<span class="signature-attributes">opt</span>, callback<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {HTMLImageElement}</span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Loads a texture from an image from a Url as specified in <code>options.src</code><br>If <code>options.color !== false</code> will set the texture to a 1x1 pixel color so that the texture is<br>immediately useable. It will be updated with the contents of the image once the image has finished<br>downloading. Filtering options will be set as approriate for image unless <code>options.auto === false</code>.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>gl</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">WebGLRenderingContext</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>the WebGLRenderingContext</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>tex</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">WebGLTexture</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>the WebGLTexture to set parameters for</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-twgl.html#.TextureOptions">module:twgl.TextureOptions</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>A TextureOptions object with whatever parameters you want set.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-twgl.html#.TextureReadyCallback">module:twgl.TextureReadyCallback</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>A function to be called when the image has finished loading. err will<br>   be non null if there was an error.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>the image being downloaded.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">HTMLImageElement</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".resizeTexture"><span class="type-signature">(static) </span>resizeTexture<span class="signature">(gl, tex, options, width<span class="signature-attributes">opt</span>, height<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Resizes a texture based on the options passed in.</p>
+<p>Note: This is not a generic resize anything function.<br>It's mostly used by <a href="module-twgl.html#.resizeFramebufferInfo"><code>module:twgl.resizeFramebufferInfo</code></a><br>It will use <code>options.src</code> if it exists to try to determine a <code>type</code><br>otherwise it will assume <code>gl.UNSIGNED_BYTE</code>. No data is provided<br>for the texture. Texture parameters will be set accordingly</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>gl</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">WebGLRenderingContext</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>the WebGLRenderingContext</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>tex</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">WebGLTexture</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>the texture to resize</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-twgl.html#.TextureOptions">module:twgl.TextureOptions</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>A TextureOptions object with whatever parameters you want set.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>width</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>the new width. If not passed in will use <code>options.width</code></p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>height</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>the new height. If not passed in will use <code>options.height</code></p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".setDefaultTextureColor"><span class="type-signature">(static) </span>setDefaultTextureColor<span class="signature">(color)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Sets the default texture color.</p>
+<p>The default texture color is used when loading textures from<br>urls. Because the URL will be loaded async we'd like to be<br>able to use the texture immediately. By putting a 1x1 pixel<br>color in the texture we can start using the texture before<br>the URL has loaded.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>color</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;number></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Array of 4 values in the range 0 to 1</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+        <dt class="important tag-deprecated">Deprecated:</dt><dd><ul class="dummy"><li>see <a href="module-twgl.html#.setDefaults"><code>module:twgl.setDefaults</code></a></li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".setEmptyTexture"><span class="type-signature">(static) </span>setEmptyTexture<span class="signature">(gl, tex, options)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Sets a texture with no contents of a certain size. In other words calls <code>gl.texImage2D</code> with <code>null</code>.<br>You must set <code>options.width</code> and <code>options.height</code>.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>gl</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">WebGLRenderingContext</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the WebGLRenderingContext</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>tex</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">WebGLTexture</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the WebGLTexture to set parameters for</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-twgl.html#.TextureOptions">module:twgl.TextureOptions</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A TextureOptions object with whatever parameters you want set.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".setSamplerParameters"><span class="type-signature">(static) </span>setSamplerParameters<span class="signature">(gl, sampler, options)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Sets the sampler parameters of a sampler.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>gl</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">WebGLRenderingContext</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the WebGLRenderingContext</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>sampler</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">WebGLSampler</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the WebGLSampler to set parameters for</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-twgl.html#.TextureOptions">module:twgl.TextureOptions</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A TextureOptions object with whatever parameters you want set.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".setTextureFilteringForSize"><span class="type-signature">(static) </span>setTextureFilteringForSize<span class="signature">(gl, tex, options<span class="signature-attributes">opt</span>, width<span class="signature-attributes">opt</span>, height<span class="signature-attributes">opt</span>, internalFormat<span class="signature-attributes">opt</span>, type<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Sets filtering or generates mips for texture based on width or height<br>If width or height is not passed in uses <code>options.width</code> and//or <code>options.height</code></p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>gl</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">WebGLRenderingContext</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>the WebGLRenderingContext</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>tex</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">WebGLTexture</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>the WebGLTexture to set parameters for</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-twgl.html#.TextureOptions">module:twgl.TextureOptions</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>A TextureOptions object with whatever parameters you want set.<br>  This is often the same options you passed in when you created the texture.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>width</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>width of texture</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>height</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>height of texture</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>internalFormat</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>The internalFormat parameter from texImage2D etc..</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>The type parameter for texImage2D etc..</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".setTextureFromArray"><span class="type-signature">(static) </span>setTextureFromArray<span class="signature">(gl, tex, src, options<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Sets a texture from an array or typed array. If the width or height is not provided will attempt to<br>guess the size. See <a href="module-twgl.html#.TextureOptions"><code>module:twgl.TextureOptions</code></a>.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>gl</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">WebGLRenderingContext</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>the WebGLRenderingContext</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>tex</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">WebGLTexture</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>the WebGLTexture to set parameters for</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>src</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;number></span>
+|
+
+<span class="param-type">ArrayBuffer</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>An array or typed arry with texture data.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-twgl.html#.TextureOptions">module:twgl.TextureOptions</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>A TextureOptions object with whatever parameters you want set.<br>  This is often the same options you passed in when you created the texture.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".setTextureFromElement"><span class="type-signature">(static) </span>setTextureFromElement<span class="signature">(gl, tex, element, options<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Set a texture from the contents of an element. Will also set<br>texture filtering or generate mips based on the dimensions of the element<br>unless <code>options.auto === false</code>. If <code>target === gl.TEXTURE_CUBE_MAP</code> will<br>attempt to slice image into 1x6, 2x3, 3x2, or 6x1 images, one for each face.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>gl</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">WebGLRenderingContext</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>the WebGLRenderingContext</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>tex</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">WebGLTexture</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>the WebGLTexture to set parameters for</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>element</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">HTMLElement</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>a canvas, img, or video element.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-twgl.html#.TextureOptions">module:twgl.TextureOptions</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>A TextureOptions object with whatever parameters you want set.<br>  This is often the same options you passed in when you created the texture.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".setTextureParameters"><span class="type-signature">(static) </span>setTextureParameters<span class="signature">(gl, tex, options)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Sets the texture parameters of a texture.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>gl</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">WebGLRenderingContext</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the WebGLRenderingContext</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>tex</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">WebGLTexture</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>the WebGLTexture to set parameters for</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-twgl.html#.TextureOptions">module:twgl.TextureOptions</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A TextureOptions object with whatever parameters you want set.<br>  This is often the same options you passed in when you created the texture.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".setTextureTo1PixelColor"><span class="type-signature">(static) </span>setTextureTo1PixelColor<span class="signature">(gl, tex, options<span class="signature-attributes">opt</span>)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+<div class="description">
+    <p>Sets a texture to a 1x1 pixel color. If <code>options.color === false</code> is nothing happens. If it's not set<br>the default texture color is used which can be set by calling <code>setDefaultTextureColor</code>.</p>
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>gl</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">WebGLRenderingContext</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>the WebGLRenderingContext</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>tex</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">WebGLTexture</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>the WebGLTexture to set parameters for</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="module-twgl.html#.TextureOptions">module:twgl.TextureOptions</a></span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>A TextureOptions object with whatever parameters you want set.<br>  This is often the same options you passed in when you created the texture.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.0</a> using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
