@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Graphics town framework code by Mike Gleicher
+  -- written October, 2015
+  -->
+<head>
+    <meta charset="UTF-8">
+    <title>James Liu Graphics Town</title>
+	
+</head>
+<body>
+<!-- load this stuff first -->
+<script src="Libraries/twgl-full.js"></script>
+<script src="Libraries/panel.js"></script>
+<script src="Libraries/arcball.js"></script>
+<script src="grobject.js"></script>
+<script src="ExampleObjects/ground.js"></script>
+<!-- Slightly modified version of ground.js -->
+<script src="ExampleObjects/runway.js"></script>
+<script src="variables.js"></script>
+
+<!-- This is where we load the objects for the world -->
+<script src="ExampleObjects/airplane.js"></script>
+<script src="ExampleObjects/hangar.js"></script>
+<script src="ExampleObjects/tower.js"></script>
+<script src="ExampleObjects/texturedplane.js"></script>
+
+
+<!-- I am adding the helicopter -->
+<!--<script src="Helicopter/helicopter.js"></script>
+
+<!-- This gets loaded LAST (actually, it probably doesn't have to) -->
+<script src="graphicstown.js"></script>
+
+
+</body>
+
+<!-- all of the shaders get stuck here in the HTML because
+  -- that's the only way I know to load them without either
+  -- sticking them in JavaScript strings, or using a web server
+  -->
+
+<script id="airplane-vs" type="notjs">
+// specialized shader for the simple airplane
+// we assume that the model matrix works as the normal
+//      matrix - this only is try if the model matrix
+//      it a rotate/translate
+//      (uniform scale is OK since we re-normalize)
+// color is solid
+// simple lighting
+    precision highp float;
+
+    attribute vec3 vpos;
+    attribute vec3 vnormal;
+    varying vec3 outColor;
+
+    uniform mat4 view;
+    uniform mat4 proj;
+    uniform mat4 model;
+    uniform vec3 lightdir;
+    uniform vec3 airplanecolor;
+
+
+    void main(void) {
+        gl_Position = proj * view * model * vec4(vpos, 1.0);
+        vec4 normal = normalize(model * vec4(vnormal,0.0));
+        float diffuse = .5 + .5*abs(dot(normal, vec4(lightdir,0.0)));
+        outColor = airplanecolor * diffuse;
+    }
+</script>
+<script id="airplane-fs" type="notjs">
+// simple shader that does vertex coloring
+//  (e.g. the vertex shader figures the lighting
+// note this is used for more than just the airplane
+    precision highp float;
+    varying vec3 outColor;
+    void main(void) {
+        gl_FragColor = vec4(outColor, 1.0);
+    }
+</script>
+
+<script id="cube-vs" type="notjs">
+// specialized shader for the simple airplane
+// we assume that the model matrix works as the normal
+//      matrix - this only is try if the model matrix
+//      it a rotate/translate
+//      (uniform scale is OK since we re-normalize)
+// color is solid
+// simple lighting
+    precision highp float;
+
+    attribute vec3 vpos;
+    attribute vec3 vnormal;
+    varying vec3 outColor;
+
+    uniform mat4 view;
+	uniform mat4 cam;
+    uniform mat4 proj;
+    uniform mat4 model;
+    uniform vec3 lightdir;
+    uniform vec3 cubecolor;
+
+
+    void main(void) {
+        gl_Position = proj * view * model * vec4(vpos, 1.0);
+        vec4 normal = normalize(model * vec4(vnormal,0.0));
+		vec3 uLightDir = normalize(lightdir);
+		vec3 specLight = normalize(vec3(1, 1, -1));
+		vec4 eye = cam * vec4(0, 0, 1, 0); // -z direction
+		vec3 h = normalize(eye.xyz + specLight); // eye and specLight same direction
+		float specular = pow(max(0.0, dot(vnormal, h)), 3.7);
+		float diffuse = 0.3;
+		if (lightdir.y >= 0.0) // between 6 am and 6 pm
+			diffuse = .3 + .5*max(0.0, dot(vnormal, uLightDir));		
+        outColor = cubecolor * (specular + diffuse);
+    }
+</script>
+<script id="cube-fs" type="notjs">
+// simple shader that does vertex coloring
+//  (e.g. the vertex shader figures the lighting
+// note this is used for more than just the airplane
+    precision highp float;
+    varying vec3 outColor;
+    void main(void) {
+        gl_FragColor = vec4(outColor, 1.0);
+    }
+</script>
+
+<script id="ground-vs" type="not-js">
+    precision highp float;
+
+    attribute vec3 vpos;
+    varying vec3 outPos;
+
+    uniform mat4 view;
+    uniform mat4 proj;
+
+    void main(void) {
+        gl_Position = proj * view * vec4(vpos, 1.0);
+        outPos = vpos;
+    }
+</script>
+<script id="ground-fs" type="notjs">
+    // note this is used for more than just the cube
+    precision highp float;
+    varying vec3 outPos;
+    void main(void) {
+		gl_FragColor = vec4(0.5, 0.5, 0.5, 1);
+    }
+</script>
+
+<script id="runway-fs" type="notjs">
+    // note this is used for more than just the cube
+    precision highp float;
+    varying vec3 outPos;
+    void main(void) {
+		gl_FragColor = vec4(0.15, 0.15, 0.15, 1);
+    }
+</script>
+
+
+</html>
